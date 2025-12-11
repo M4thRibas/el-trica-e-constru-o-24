@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navItems = [{
@@ -21,11 +21,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Zap className="w-6 h-6 text-secondary-foreground" />
-            </div>
+            
             <span className="font-display text-2xl text-primary-foreground tracking-wide">
-            <span className="text-secondary">BUILD</span>
+            <span className="text-secondary"></span>
             </span>
           </a>
 
