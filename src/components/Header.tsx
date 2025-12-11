@@ -29,10 +29,10 @@ const Header = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            {navItems.map(item => <a key={item.label} href={item.href} className="text-primary-foreground/80 hover:text-secondary transition-colors font-medium">
+            {navItems.map(item => <a key={item.label} href={item.href} className="text-primary-foreground/80 hover:text-secondary transition-colors font-medium border-[#162a51]">
                 {item.label}
               </a>)}
-            <Button variant="hero" size="lg">
+            <Button variant="hero" size="lg" className="bg-primary-foreground text-primary">
               Orçamento Grátis
             </Button>
           </nav>
