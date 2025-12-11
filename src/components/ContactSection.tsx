@@ -4,60 +4,57 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-
 const ContactSection = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: "",
+    message: ""
   });
-
-  const contactInfo = [
-    {
-      icon: Phone,
-      label: "Telefone",
-      value: "(11) 99999-9999",
-      href: "tel:+5511999999999",
-    },
-    {
-      icon: Mail,
-      label: "E-mail",
-      value: "contato@eletrobuild.com.br",
-      href: "mailto:contato@eletrobuild.com.br",
-    },
-    {
-      icon: MapPin,
-      label: "Endereço",
-      value: "São Paulo, SP - Brasil",
-      href: "#",
-    },
-    {
-      icon: Clock,
-      label: "Horário",
-      value: "Seg - Sex: 8h às 18h",
-      href: "#",
-    },
-  ];
-
+  const contactInfo = [{
+    icon: Phone,
+    label: "Telefone",
+    value: "(11) 99999-9999",
+    href: "tel:+5511999999999"
+  }, {
+    icon: Mail,
+    label: "E-mail",
+    value: "contato@eletrobuild.com.br",
+    href: "mailto:contato@eletrobuild.com.br"
+  }, {
+    icon: MapPin,
+    label: "Endereço",
+    value: "São Paulo, SP - Brasil",
+    href: "#"
+  }, {
+    icon: Clock,
+    label: "Horário",
+    value: "Seg - Sex: 8h às 18h",
+    href: "#"
+  }];
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve.",
+      description: "Entraremos em contato em breve."
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: ""
+    });
   };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
-
-  return (
-    <section id="contato" className="py-20 md:py-32 bg-hero">
+  return <section id="contato" className="py-20 md:py-32 bg-hero">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -81,14 +78,9 @@ const ContactSection = () => {
               INFORMAÇÕES DE CONTATO
             </h3>
             <div className="space-y-6">
-              {contactInfo.map((info) => (
-                <a
-                  key={info.label}
-                  href={info.href}
-                  className="flex items-center gap-4 group"
-                >
-                  <div className="w-14 h-14 bg-secondary/20 rounded-xl flex items-center justify-center group-hover:bg-secondary/30 transition-colors">
-                    <info.icon className="w-6 h-6 text-secondary" />
+              {contactInfo.map(info => <a key={info.label} href={info.href} className="flex items-center gap-4 group">
+                  <div className="w-14 h-14 rounded-xl flex items-center justify-center transition-colors bg-sidebar-ring">
+                    <info.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <span className="text-primary-foreground/60 text-sm block">
@@ -98,8 +90,7 @@ const ContactSection = () => {
                       {info.value}
                     </span>
                   </div>
-                </a>
-              ))}
+                </a>)}
             </div>
           </div>
 
@@ -111,43 +102,14 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <Input
-                    name="name"
-                    placeholder="Seu nome"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="h-12"
-                  />
+                  <Input name="name" placeholder="Seu nome" value={formData.name} onChange={handleChange} required className="h-12" />
                 </div>
                 <div>
-                  <Input
-                    name="phone"
-                    placeholder="Telefone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="h-12"
-                  />
+                  <Input name="phone" placeholder="Telefone" value={formData.phone} onChange={handleChange} required className="h-12" />
                 </div>
               </div>
-              <Input
-                name="email"
-                type="email"
-                placeholder="E-mail"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="h-12"
-              />
-              <Textarea
-                name="message"
-                placeholder="Descreva seu projeto ou necessidade..."
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="min-h-[120px] resize-none"
-              />
+              <Input name="email" type="email" placeholder="E-mail" value={formData.email} onChange={handleChange} required className="h-12" />
+              <Textarea name="message" placeholder="Descreva seu projeto ou necessidade..." value={formData.message} onChange={handleChange} required className="min-h-[120px] resize-none" />
               <Button variant="secondary" size="lg" className="w-full">
                 Enviar Mensagem
                 <Send className="w-4 h-4" />
@@ -156,8 +118,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
