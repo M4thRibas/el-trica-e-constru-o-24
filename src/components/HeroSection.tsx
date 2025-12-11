@@ -54,7 +54,7 @@ const HeroSection = () => {
               Solicitar Orçamento
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="heroOutline" size="xl">
+            <Button variant="heroOutline" size="xl" className="text-primary-foreground border bg-sidebar-ring border-primary-foreground">
               Nossos Serviços
             </Button>
           </div>
@@ -67,7 +67,7 @@ const HeroSection = () => {
             icon: Icon,
             label
           }) => <div key={label} className="flex items-center gap-2 bg-primary-foreground/5 border border-primary-foreground/10 rounded-full px-4 py-2">
-                <Icon className="w-4 h-4 text-secondary" />
+                <Icon className="w-4 h-4 text-secondary bg-sidebar-primary border-sidebar-primary" />
                 <span className="text-primary-foreground/80 text-sm">{label}</span>
               </div>)}
           </div>
