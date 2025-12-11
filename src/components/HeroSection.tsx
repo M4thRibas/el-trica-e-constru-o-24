@@ -67,7 +67,7 @@ const HeroSection = () => {
             icon: Icon,
             label
           }) => <div key={label} className="flex items-center gap-2 bg-primary-foreground/5 border border-primary-foreground/10 rounded-full px-4 py-2">
-                <Icon className="w-4 h-4 bg-[#243559] text-secondary border-primary" />
+                <Icon className="w-4 h-4 text-[#3b82f6]" />
                 <span className="text-primary-foreground/80 text-sm">{label}</span>
               </div>)}
           </div>
