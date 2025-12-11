@@ -34,7 +34,7 @@ const ServicesSection = () => {
           </span>
           <h2 className="font-display text-4xl md:text-6xl text-foreground mt-2 mb-4">
             SOLUÇÕES COMPLETAS PARA{" "}
-            <span className="text-gradient text-sidebar-ring">SUA OBRA</span>
+            <span className="text-gradient text-blue-500">SUA OBRA</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Oferecemos uma ampla gama de serviços especializados em construção civil e 

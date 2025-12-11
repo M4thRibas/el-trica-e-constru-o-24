@@ -63,7 +63,7 @@ const ContactSection = () => {
           </span>
           <h2 className="font-display text-4xl md:text-6xl text-primary-foreground mt-2 mb-4">
             VAMOS CONVERSAR SOBRE{" "}
-            <span className="text-gradient text-sidebar-ring">SEU PROJETO</span>
+            <span className="text-gradient text-blue-500">SEU PROJETO</span>
           </h2>
           <p className="text-primary-foreground/70 text-lg">
             Entre em contato conosco e solicite um orçamento sem compromisso. 

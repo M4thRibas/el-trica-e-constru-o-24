@@ -20,9 +20,7 @@ const Footer = () => {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
             
-            <span className="font-display text-2xl text-primary-foreground tracking-wide">
-              ELETRO<span className="text-secondary">BUILD</span>
-            </span>
+            
           </a>
 
           {/* Copyright */}
@@ -32,7 +30,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            {socialLinks.map(social => <a key={social.label} href={social.href} aria-label={social.label} className="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center hover:bg-secondary/20 transition-colors">
+            {socialLinks.map(social => <a key={social.label} href={social.href} aria-label={social.label} className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors bg-blue-500">
                 <social.icon className="w-5 h-5 text-secondary" />
               </a>)}
           </div>
