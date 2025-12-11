@@ -22,8 +22,8 @@ const ContactSection = () => {
   }, {
     icon: Mail,
     label: "E-mail",
-    value: "contato@eletrobuild.com.br",
-    href: "mailto:contato@eletrobuild.com.br"
+    value: "studiomaisluz@gmail.com",
+    href: "mailto:studiomaisluz@gmail.com"
   }, {
     icon: MapPin,
     label: "Endereço",
