@@ -25,7 +25,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-primary-foreground/60 text-sm text-center">
-            © {currentYear} EletroBuild. Todos os direitos reservados.
+            © {currentYear} Studio Mais Luz. Todos os direitos reservados.
           </p>
 
           {/* Social Links */}
