@@ -17,8 +17,8 @@ const ContactSection = () => {
   const contactInfo = [{
     icon: Phone,
     label: "Telefone",
-    value: "(11) 99999-9999",
-    href: "tel:+5511999999999"
+    value: "(51) 99332-5296",
+    href: "tel:+5551993325296"
   }, {
     icon: Mail,
     label: "E-mail",
