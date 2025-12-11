@@ -58,12 +58,12 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
+          <span className="font-semibold text-sm uppercase tracking-wider text-sidebar-ring">
             Contato
           </span>
           <h2 className="font-display text-4xl md:text-6xl text-primary-foreground mt-2 mb-4">
             VAMOS CONVERSAR SOBRE{" "}
-            <span className="text-gradient">SEU PROJETO</span>
+            <span className="text-gradient text-sidebar-ring">SEU PROJETO</span>
           </h2>
           <p className="text-primary-foreground/70 text-lg">
             Entre em contato conosco e solicite um orçamento sem compromisso. 
@@ -110,7 +110,7 @@ const ContactSection = () => {
               </div>
               <Input name="email" type="email" placeholder="E-mail" value={formData.email} onChange={handleChange} required className="h-12" />
               <Textarea name="message" placeholder="Descreva seu projeto ou necessidade..." value={formData.message} onChange={handleChange} required className="min-h-[120px] resize-none" />
-              <Button variant="secondary" size="lg" className="w-full">
+              <Button variant="secondary" size="lg" className="w-full text-primary bg-sidebar-ring">
                 Enviar Mensagem
                 <Send className="w-4 h-4" />
               </Button>
