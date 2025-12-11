@@ -44,19 +44,7 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => <div key={service.title} className="group bg-card border border-border rounded-2xl p-8 hover:border-secondary/50 hover:shadow-card transition-all duration-300 hover:-translate-y-1" style={{
-          animationDelay: `${index * 0.1}s`
-        }}>
-              <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all bg-blue-500">
-                <service.icon className="w-7 h-7 text-[#142952]" />
-              </div>
-              <h3 className="font-display text-2xl text-card-foreground mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
-            </div>)}
+          {services.map((service, index) => {})}
         </div>
       </div>
     </section>;

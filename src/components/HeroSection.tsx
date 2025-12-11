@@ -36,7 +36,7 @@ const HeroSection = () => {
           animationDelay: "0.1s"
         }}>
             CONSTRUÇÃO &{" "}
-            <span className="text-gradient text-blue-400">INSTALAÇÃO ELÉTRICA</span>
+            <span className="text-gradient text-secondary">INSTALAÇÃO ELÉTRICA</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-primary-foreground/70 max-w-2xl mb-8 animate-fade-in" style={{
