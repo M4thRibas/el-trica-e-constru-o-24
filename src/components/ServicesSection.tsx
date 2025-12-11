@@ -48,7 +48,7 @@ const ServicesSection = () => {
           animationDelay: `${index * 0.1}s`
         }}>
               <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 group-hover:scale-110 transition-all">
-                <service.icon className="w-7 h-7 text-secondary" />
+                <service.icon className="w-7 h-7 text-[#142952]" />
               </div>
               <h3 className="font-display text-2xl text-card-foreground mb-3">
                 {service.title}
