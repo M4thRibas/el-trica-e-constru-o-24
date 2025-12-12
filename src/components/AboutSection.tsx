@@ -1,17 +1,8 @@
 import { CheckCircle2, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const AboutSection = () => {
-  const highlights = [
-    "Equipe técnica certificada e qualificada",
-    "Materiais de primeira qualidade",
-    "Garantia em todos os serviços",
-    "Atendimento personalizado",
-    "Orçamentos sem compromisso"
-  ];
-
-  return (
-    <section id="sobre" className="py-20 md:py-32 bg-muted">
+  const highlights = ["Equipe técnica certificada e qualificada", "Materiais de primeira qualidade", "Garantia em todos os serviços", "Atendimento personalizado", "Orçamentos sem compromisso"];
+  return <section id="sobre" className="py-20 md:py-32 bg-muted">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Column - Content */}
@@ -35,25 +26,16 @@ const AboutSection = () => {
 
             {/* Highlights */}
             <div className="space-y-4 mb-8">
-              {highlights.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-3 group"
-                >
+              {highlights.map(item => <div key={item} className="flex items-center gap-3 group">
                   <div className="w-6 h-6 rounded-full bg-[#3b82f6]/10 flex items-center justify-center group-hover:bg-[#3b82f6]/20 transition-colors">
                     <CheckCircle2 className="w-4 h-4 text-[#3b82f6]" />
                   </div>
                   <span className="text-foreground">{item}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
-            <Button 
-              variant="secondary" 
-              size="lg" 
-              className="bg-[#3b82f6] text-white hover:bg-[#3b82f6]/90 transition-all duration-300 hover:shadow-lg hover:shadow-[#3b82f6]/25"
-            >
-              Conheça Nossa História
+            <Button variant="secondary" size="lg" className="bg-[#3b82f6] text-white hover:bg-[#3b82f6]/90 transition-all duration-300 hover:shadow-lg hover:shadow-[#3b82f6]/25">
+              Solicitar Orçamento 
             </Button>
           </div>
 
@@ -67,12 +49,7 @@ const AboutSection = () => {
               <div className="relative bg-gradient-to-br from-card to-card/80 border border-border rounded-3xl p-12 md:p-16 text-center shadow-2xl">
                 {/* Stars decoration */}
                 <div className="flex justify-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-6 h-6 text-yellow-400 fill-yellow-400"
-                    />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}
                 </div>
                 
                 <span className="font-display text-7xl md:text-8xl bg-gradient-to-r from-[#3b82f6] to-[#60a5fa] bg-clip-text text-transparent block mb-3">
@@ -89,8 +66,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
