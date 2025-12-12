@@ -1,6 +1,4 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
-import logo from "@/assets/logo-studio-mais-luz-transparent.png";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const socialLinks = [{
@@ -20,8 +18,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center">
-            <img src={logo} alt="Studio Mais Luz" className="h-14 w-auto" />
+          <a href="#inicio" className="flex items-center gap-2">
+            
+            
           </a>
 
           {/* Copyright */}
