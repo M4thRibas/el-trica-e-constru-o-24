@@ -1,19 +1,13 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const AboutSection = () => {
-  const highlights = ["Mais de 15 anos de experiência no mercado", "Equipe técnica certificada e qualificada", "Materiais de primeira qualidade", "Garantia em todos os serviços", "Atendimento personalizado", "Orçamentos sem compromisso"];
+  const highlights = ["Equipe técnica certificada e qualificada", "Materiais de primeira qualidade", "Garantia em todos os serviços", "Atendimento personalizado", "Orçamentos sem compromisso"];
   const stats = [{
-    value: "500+",
-    label: "Projetos Realizados"
-  }, {
-    value: "15+",
-    label: "Anos de Experiência"
-  }, {
     value: "100%",
     label: "Clientes Satisfeitos"
   }, {
-    value: "24h",
-    label: "Suporte Técnico"
+    value: "✓",
+    label: "Garantia de Suporte"
   }];
   return <section id="sobre" className="py-20 md:py-32 bg-muted">
       <div className="container mx-auto px-4">
