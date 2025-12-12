@@ -35,21 +35,27 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
+              className="group relative p-8 md:p-10 rounded-3xl bg-gradient-to-br from-card to-card/80 border border-border hover:border-[#3b82f6]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#3b82f6]/10 hover:-translate-y-1"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-7 h-7 text-[#142952]" />
+              {/* Decorative gradient */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#3b82f6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#3b82f6]/20 to-[#3b82f6]/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="w-8 h-8 text-[#3b82f6]" />
+                </div>
+                <h3 className="font-display text-2xl text-foreground mb-4 group-hover:text-[#3b82f6] transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-base">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="font-display text-xl text-foreground mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
             </div>
           ))}
         </div>
