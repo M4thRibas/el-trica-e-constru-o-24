@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo-studio-mais-luz.jpg";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navItems = [{
@@ -20,11 +21,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2 group">
-            
-            <span className="font-display text-2xl text-primary-foreground tracking-wide">
-            <span className="text-secondary"></span>
-            </span>
+          <a href="#inicio" className="flex items-center group">
+            <img src={logo} alt="Studio Mais Luz" className="h-12 md:h-14 w-auto" />
           </a>
 
           {/* Desktop Nav */}
