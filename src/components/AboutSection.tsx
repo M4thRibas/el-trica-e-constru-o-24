@@ -34,9 +34,11 @@ const AboutSection = () => {
                 </div>)}
             </div>
 
-            <Button variant="secondary" size="lg" className="bg-[#3b82f6] text-white hover:bg-[#3b82f6]/90 transition-all duration-300 hover:shadow-lg hover:shadow-[#3b82f6]/25">
-              Solicitar Orçamento 
-            </Button>
+            <a href="https://api.whatsapp.com/send/?phone=5551993325296&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              <Button variant="secondary" size="lg" className="bg-[#3b82f6] text-white hover:bg-[#3b82f6]/90 transition-all duration-300 hover:shadow-lg hover:shadow-[#3b82f6]/25">
+                Solicitar Orçamento 
+              </Button>
+            </a>
           </div>
 
           {/* Right Column - Featured Stat */}
