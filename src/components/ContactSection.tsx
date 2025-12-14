@@ -28,7 +28,7 @@ const ContactSection = () => {
   }, {
     icon: MapPin,
     label: "Endereço",
-    value: "São Paulo, SP - Brasil",
+    value: "Porto Alegre, RS - Brasil",
     href: "#"
   }, {
     icon: Clock,
