@@ -53,9 +53,11 @@ const HeroSection = () => {
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </a>
-            <Button variant="heroOutline" size="xl" className="text-primary-foreground border bg-sidebar-ring border-primary-foreground">
-              Nossos Serviços
-            </Button>
+            <a href="#servicos">
+              <Button variant="heroOutline" size="xl" className="text-primary-foreground border bg-sidebar-ring border-primary-foreground">
+                Nossos Serviços
+              </Button>
+            </a>
           </div>
 
           {/* Feature Pills */}
