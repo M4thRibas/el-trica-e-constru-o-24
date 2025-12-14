@@ -1,18 +1,10 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const socialLinks = [{
-    icon: Facebook,
-    href: "#",
-    label: "Facebook"
-  }, {
     icon: Instagram,
-    href: "#",
+    href: "https://www.instagram.com/studiomaisluz?igsh=cW02YnZycWt2MG9w",
     label: "Instagram"
-  }, {
-    icon: Linkedin,
-    href: "#",
-    label: "LinkedIn"
   }];
   return <footer className="bg-primary border-t border-secondary/20 py-12">
       <div className="container mx-auto px-4">
