@@ -47,10 +47,12 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in" style={{
           animationDelay: "0.3s"
         }}>
-            <Button variant="hero" size="xl" className="text-primary-foreground bg-sidebar-ring">
-              Solicitar Orçamento
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <a href="https://api.whatsapp.com/send/?phone=5551993325296&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="xl" className="text-primary-foreground bg-sidebar-ring">
+                Solicitar Orçamento
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
             <Button variant="heroOutline" size="xl" className="text-primary-foreground border bg-sidebar-ring border-primary-foreground">
               Nossos Serviços
             </Button>

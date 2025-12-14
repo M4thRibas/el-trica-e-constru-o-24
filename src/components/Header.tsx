@@ -30,9 +30,11 @@ const Header = () => {
             {navItems.map(item => <a key={item.label} href={item.href} className="text-primary-foreground/80 hover:text-[#3b82f6] transition-colors font-medium">
                 {item.label}
               </a>)}
-            <Button variant="hero" size="lg" className="bg-primary-foreground text-primary">
-              Orçamento Grátis
-            </Button>
+            <a href="https://api.whatsapp.com/send/?phone=5551993325296&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="lg" className="bg-primary-foreground text-primary">
+                Orçamento Grátis
+              </Button>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -46,9 +48,11 @@ const Header = () => {
             {navItems.map(item => <a key={item.label} href={item.href} className="block py-3 text-primary-foreground/80 hover:text-secondary transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
                 {item.label}
               </a>)}
-            <Button variant="hero" className="w-full mt-4">
-              Orçamento Grátis
-            </Button>
+            <a href="https://api.whatsapp.com/send/?phone=5551993325296&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="block">
+              <Button variant="hero" className="w-full mt-4">
+                Orçamento Grátis
+              </Button>
+            </a>
           </nav>}
       </div>
     </header>;

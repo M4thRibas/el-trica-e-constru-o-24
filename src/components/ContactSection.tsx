@@ -14,11 +14,12 @@ const ContactSection = () => {
     phone: "",
     message: ""
   });
+  const whatsappLink = "https://api.whatsapp.com/send/?phone=5551993325296&text&type=phone_number&app_absent=0";
   const contactInfo = [{
     icon: Phone,
     label: "Telefone",
     value: "(51) 99332-5296",
-    href: "tel:+5551993325296"
+    href: whatsappLink
   }, {
     icon: Mail,
     label: "E-mail",
@@ -110,10 +111,12 @@ const ContactSection = () => {
               </div>
               <Input name="email" type="email" placeholder="E-mail" value={formData.email} onChange={handleChange} required className="h-12" />
               <Textarea name="message" placeholder="Descreva seu projeto ou necessidade..." value={formData.message} onChange={handleChange} required className="min-h-[120px] resize-none" />
-              <Button variant="secondary" size="lg" className="w-full text-primary bg-sidebar-ring">
-                Enviar Mensagem
-                <Send className="w-4 h-4" />
-              </Button>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="block w-full">
+                <Button variant="secondary" size="lg" className="w-full text-primary bg-sidebar-ring" type="button">
+                  Enviar Mensagem
+                  <Send className="w-4 h-4" />
+                </Button>
+              </a>
             </form>
           </div>
         </div>
